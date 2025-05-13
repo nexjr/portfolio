@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="icon" href="img/atom.png">
+
+</head>
+<body>
+
+  <div>
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <div class="ball"></div>
+    </label>
+  </div>
+
+   <!-- <h1>Portifólio</h1> -->
+    <div class="container">
+        <div class="text-content">
+          <h2 id="nome">Claudio Junior</h2>
+          <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia <br> e estou sempre em busca de novos aprendizados. <span onclick="abrirModal()" style="cursor: pointer; color: var(--primary-color); text-decoration: underline;">Saber mais</span>
+          </p>
+        </div>
+        <img src="img/claudio-junior.jpg" alt="Foto de perfil" id="eu">
+    </div>
+    
+    <h2 class="texto-h2">Ferramentas e linguagens que estou aprendendo</h2>
+        <div class="ling-container">
+        <img src="img/HTML5.png" alt="HTML5" class="ling">
+        <img src="img/CSS3.png" alt="CSS3" class="ling">
+        <img src="img/JS.png" alt="JS" class="ling">
+    </div>
+
+    <h2 class="texto-h2">Projetos</h2>
+    
+    <div class="container-projetos">
+      <a href="https://nexjr.github.io/ReinoAve/index.html" target="_blank" class="img-projeto">
+        <div class="overlay">
+          <p>Projeto Reino Ave</p>
+        </div>
+        <img src="img/reinoave.PNG" alt="">
+      </a>
+    
+      <a href="https://nexjr.github.io/links/" class="img-projeto" target="_blank">
+        <div class="overlay">
+          <p>Projeto Links</p>
+        </div>
+        <img src="img/links.PNG" alt="">
+      </a>
+    </div>
+    
+    
+    <h2 class="texto-h2">Contato</h2>
+
+    <p class="p-final">Entre em contato comigo!</p>
+
+    <ul class="social-icons">
+        <li><div><a href="https://github.com/nexjr" target="_blank"><img src="img/github.png" alt="github" class="icons"></a></div></li>
+        <li><div><a href="https://www.linkedin.com/in/claudio-junior-bb4842250/" target="_blank"><img src="img/linkedin.png" alt="linkedin" class="icons"></a></div></li>
+        <li><div><a href="https://wa.me/5511977583605?text=Olá,%20tudo%20bem%3F" target="_blank"><img src="img/whatsapp.png" alt="Whats" class="icons"></a></div></li>
+        <li><div><a href="https://www.instagram.com/nexjr_/#" target="_blank"><img src="img/instagram.png" alt="Instagram" class="icons"></a></div></li>
+      </ul>
+
+      <div id="meuModal" class="modal">
+        <div class="modal-conteudo">
+          <span class="fechar" onclick="fecharModal()">&times;</span>
+          <h2>Mais sobre mim</h2>
+          <p>
+            Tenho 20 anos e conheci a programação aos 16, através do meu primo que é programador e me incentivou a começar. Comecei a estudar e achei incrível. Por mais que fosse difícil em algumas partes e eu passasse horas preso em um bug, a sensação de resolver era indescritível.
+
+            Acabei me afastando da programação por alguns motivos e passei alguns anos sem codar. Mas decidi que era hora de voltar a fazer o que eu realmente gosto. Foi aí que comecei o curso de Análise e Desenvolvimento de Sistemas.
+
+            Estou voltando aos poucos, praticamente do zero. Esqueci muita coisa, mas com disciplina e constância, sei que vou recuperar o que perdi e evoluir cada vez mais! 🚀
+          </p>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
