@@ -144,12 +144,13 @@ a div p {
   
 
 #eu {
-   width: 350px;
-   height: 350px;
+  width: 350px !important;
+  height: 350px !important;
    border-radius: 50%;
    border: 5px solid var(--primary-color);
    margin-top: 25px;
    margin-bottom: 25px;
+   object-fit: cover;
 }
 
 .ling-container {
