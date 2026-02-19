@@ -156,10 +156,18 @@ a div p {
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-  }
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-left: 50px;
+    padding-right: 0;
+    width: 100%; 
+}
+
+.text-content {
+    flex: 1;
+    max-width: 60%; 
+}
   
   .texto-h2 {
     text-align: center;
