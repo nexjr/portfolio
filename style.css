@@ -20,16 +20,6 @@ body {
     background-color: var(--bg-color);
 }
 
-/*h1 {
-    margin: 5px;
-    margin-top: 15px;
-    padding: 5px;
-    text-align: center;
-    border-top: 2px solid #399cf1;
-    border-bottom: 2px solid #399cf1;
-
-} */
-
 h2 {
     margin: 5px;
     padding: 5px;
@@ -38,8 +28,6 @@ h2 {
     font-weight: 800;
     font-style: normal;
     color: var(--texto-color);
-
-    
 }
 
 #nome {
@@ -69,20 +57,6 @@ img {
   transition: transform 0.3s ease;
 }
 
-  /*.container-projetos {
-    display: flex;
-    justify-content: center;
-    align-items: center;       
-    gap: 40px;            
-    flex-wrap: wrap;        
-    margin-top: 30px;
-  }
-
-  .img-projeto img:hover {
-    transform: scale(1.05);
-  }
-*/
-
 .container-projetos {
   display: flex;
   justify-content: center;
@@ -95,15 +69,12 @@ img {
   display: inline-block;
   overflow: hidden;
   border-radius: 12px;
- /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .img-projeto img {
   display: block;
-  /* width: ; */
   height: auto;
   transition: transform 0.3s ease;
-  
 }
 
 a div p {
@@ -140,12 +111,9 @@ a div p {
   transform: scale(1.05);
 }
 
-
-  
-
 #eu {
-  width: 350px !important;
-  height: 350px !important;
+   width: 350px !important;
+   height: 350px !important;
    border-radius: 50%;
    border: 5px solid var(--primary-color);
    margin-top: 25px;
@@ -170,7 +138,7 @@ a div p {
 .social-icons {
     display: flex;
     justify-content: center; 
-    list-style: none;         
+    list-style: none;        
     padding: 0;
     margin: 20px 0;
     gap: 20px;               
@@ -185,7 +153,6 @@ a div p {
   .icons:hover {
     transform: scale(1.1); 
   }
-  
 
 .container {
     display: flex;
@@ -247,7 +214,6 @@ a div p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 5px;
   position: relative;
   height: 26px;
@@ -255,7 +221,6 @@ a div p {
   transform: scale(1);
   float: left;
   margin: 5px;
-
 }
 
 
@@ -274,8 +239,6 @@ a div p {
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
 }
-
-/*animation*/
 
 body {
   animation: FromTop .8s;
@@ -298,7 +261,6 @@ body {
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   transition: background 0.2s linear;
-
 }
 
 body.dark {
@@ -306,4 +268,31 @@ body.dark {
   --projeto-color: #6a46bf;
   --bg-color: #0c0918;
   --texto-color: white;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #eu {
+    width: 250px !important;
+    height: 250px !important;
+    margin-top: 40px;
+  }
+
+  .ling-container {
+    flex-wrap: wrap;
+  }
+
+  .ling {
+    width: 100px;
+    height: 100px;
+  }
 }
